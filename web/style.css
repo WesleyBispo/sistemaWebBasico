@@ -1,0 +1,700 @@
+:root {
+  --primary: #0F3B44;
+  --primary-light: #036C7F;
+  --white: #ffffff;
+  --black: #000000;
+  --eror: #ec5353
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+label {
+  color: var(--black)
+}
+
+html,
+body {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+/* Text */
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Buttons */
+.btn {
+  padding: 24px 40px;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.btn.btn-sm {
+  padding: 12px 20px;
+  font-size: 1rem;
+
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+/* Text color */
+.text-primary-light {
+  color: var(--primary-light);
+}
+
+/* Background */
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+/* Fonts */
+.font14 {
+  font-size: 0.875rem;
+}
+
+.font12 {
+  font-size: 0.75rem;
+}
+
+.font10 {
+  font-size: 0.625rem;
+}
+
+/* Banner */
+.banner {
+  background: url('./img/banner.png') no-repeat center;
+  background-size: contain;
+
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Max Width */
+.max-width-lg {
+  max-width: 1094px;
+}
+
+/* Padding Section */
+.section-padding {
+  padding: 100px 0;
+}
+
+/* Como funciona */
+.como-funciona {
+  background: url('./img/como_funciona.png') no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  /* padding-top: 98px; */
+  /* padding-left: 118px; */
+
+}
+
+.como-funciona-card {
+  width: 270px;
+  max-width: 100%;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Cursos disponiveis */
+.cursos-disponveis {
+  background: url('./img/cursos.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.curso {
+  background-color: var(--primary);
+  border-radius: 2rem;
+  width: 375px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 22px;
+  text-align: center;
+}
+
+.curso img {
+  margin-right: 12px;
+}
+
+.curso-nome {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* Maratona */
+.maratona {
+  min-height: 100vh;
+  background: url('./img/maratona.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+/* Palestras disponiveis */
+.palestrar-disponiveis {
+  background: url('./img/palestras.png') no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Palestra */
+.palestra {
+  display: flex;
+  align-items: center;
+}
+
+.palestra-empresa {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: var(--primary);
+  border-radius: 2rem;
+  width: 375px;
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 11px 22px;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.palestra-data-hora {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}
+
+/* Presencas confirmadas */
+.texto-destauqe {}
+
+.presencas-confirmadas {
+  min-height: 100vh;
+  background: url('./img/presencas.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+/* Infofest */
+.infofest {
+  min-height: 100vh;
+  background: url('./img/infofest.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+/* Presença */
+.presenca {
+  background-color: var(--primary);
+  border-radius: 2rem;
+  padding: 24px 22px;
+  display: flex;
+  align-items: center;
+
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.presenca-descricao {
+  font-size: 1.375rem;
+  font-weight: bold;
+  padding: 0 8rem;
+  max-width: 100%;
+}
+
+.presenca-img {
+  border-radius: 12px;
+}
+
+/* Realização */
+.realizacao {
+  background: url('./img/realizacao.png') no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+/* Citação */
+.citacao {
+  background: url('./img/citacao.png') no-repeat center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.citacao-texto {
+  font-size: 3rem;
+  font-weight: 700;
+  max-width: 900px;
+  text-align: center;
+}
+
+.citacao-autor {
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: var(--primary-light);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.citacao-autor strong {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+/* Contato */
+.contato {
+  background: url('./img/contato.png') no-repeat center;
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+.contato-texto {
+  font-size: 1.4rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .presenca-descricao {
+    padding: 0 2rem;
+  }
+}
+
+/* MD */
+@media screen and (max-width: 768px) {
+
+  /* Text */
+  h2 {
+    font-size: 3rem;
+  }
+
+  .presenca {
+    flex-direction: column;
+  }
+
+  .presenca-descricao {
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+
+  /* Text */
+  h2 {
+    font-size: 2rem;
+  }
+
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+
+  /* Button */
+  .btn {
+    font-size: 1rem;
+  }
+
+  /* Palestra */
+  .palestra-empresa {
+    flex-direction: column;
+    width: 220px;
+    max-width: 100%;
+    font-size: 1.2rem;
+    margin-right: 12px;
+    min-height: 160px;
+  }
+
+  .presenca-descricao {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  /* Cursos */
+  .curso-nome {
+    font-size: 1rem;
+  }
+
+  /* Realização */
+  .realizacao img {
+    width: 180px;
+  }
+
+  /* Citação */
+  .citacao-texto {
+    font-size: 2rem;
+  }
+
+  .citacao-autor {
+    font-size: 2rem;
+  }
+
+  /* Contato */
+  .contato-texto {
+    font-size: 14px;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8cffaf;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid black;
+  /* creates padding around scroll thumb */
+}
+
+/* Page cadastro */
+.page-cadastro {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  overflow: auto;
+  padding: 2rem 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./img/infofest.png') no-repeat center;
+  background-size: cover;
+}
+
+.form-container {
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.form-content {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .form-content {
+    padding: 2rem 1rem;
+  }
+}
+
+.form-image {
+  background-color: var(--primary);
+  padding: 4rem 2rem;
+}
+
+.form-content h1 {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.form-content h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: var(--primary-light);
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+/* Estilos do form */
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.form-control,
+.form-select {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #00000050;
+  border-radius: 10px;
+  /* box-shadow: 1px 1px 6px #0000001c; */
+  font-size: 0.8rem;
+  transition: all 200ms ease-in-out;
+}
+
+.form-control:hover,
+.form-select:hover {
+  background-color: #eeeeee75;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: var(--primary-light);
+}
+
+.form-check-input {
+  border: 1px solid #00000050;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+/* Error */
+.error-text.alert {
+  padding: 0;
+  color: var(--eror);
+  font-size: 0.75rem;
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+
+/* Page selecao */
+.page-selecao {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  overflow: auto;
+  padding: 4rem 14px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background: url('./img/infofest.png') no-repeat center;
+  background-size: cover;
+}
+
+.page-selecao h1 {
+  font-size: 2.8rem;
+  /* text-transform: uppercase; */
+  font-weight: 700;
+}
+
+.page-selecao h1::after {
+  content: "";
+  display: block;
+  width: 12rem;
+  height: 0.3rem;
+  background-color: var(--primary-light);
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.page-selecao h2 {
+  font-size: 2.4rem;
+}
+
+.page-selecao h2::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: var(--primary-light);
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.table th {
+  color: var(--white);
+}
+
+.table th,
+.table td {
+  background-color: transparent;
+}
+
+.table .form-check-input {
+  width: 24px;
+  height: 24px;
+}
+
+/* Pagina de pagamentos */
+.page-pagamento {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  overflow: auto;
+  padding: 4rem 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./img/infofest.png') no-repeat center;
+  background-size: cover;
+}
+
+.page-pagamento h1,
+.page-pagamento h2 {
+  letter-spacing: normal;
+}
+
+.page-pagamento h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: var(--primary-light);
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+
+.pagamento-content {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 1rem 2rem;
+}
+
+.pagamento-registro {
+  background-color: var(--primary)
+}
+
+.pagamento-registro ul {
+  list-style-type: none;
+}
+
+.pagamento-metodos {
+  display: flex;
+  align-items: stretch;
+}
+
+.pagamento-metodo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid #0000001c;
+  height: auto;
+  margin-right: 14px;
+  transition: all 200ms ease-in-out;
+}
+
+@media screen and (max-width: 576px) {
+  .pagamento-metodo img {
+    width: 80px;
+  }
+}
+
+.pagamento-metodo:hover {
+  border-color: var(--primary-light);
+  cursor: pointer;
+}
+
+.pagamento-metodo.active {
+  border-color: var(--primary);
+}
+
+/* Login */
+.page-login {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  overflow: auto;
+  padding: 4rem 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./img/infofest.png') no-repeat center;
+  background-size: cover;
+}
+
+.page-login h1,
+.page-login h2 {
+  letter-spacing: normal;
+}
+
+
+.page-login h1 {
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  font-weight: 700;
+  color: var(--black);
+}
+
+.page-login h1::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--primary-light);
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.login-container {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#infoUsuario {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0; 
+}
+
+#infoUsuario li {
+  margin-top: 10px; 
+  margin-left: 6px;
+}

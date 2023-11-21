@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infoeste 2023 - Cadastro</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/logoinfo.png" />
+</head>
+
+<body class="body-page-cadastro">
+    <main class="page-cadastro">
+        <div class="container">
+            <div class="form-container row">
+                <div class="form-image col-6 d-none d-xl-block">
+                    <img src="./img/undraw_shopping_re_3wst.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="form form-content">
+                        <form action="./selecao.html" method="GET" class="formulario">
+                            <div class="d-flex align-items-center justify-content-between mb-3 mb-sm-4">
+                                <h1 class="mb-0">Cadastre-se</h1>
+                                <a href="./login.html" class="btn btn-sm btn-primary d-none d-sm-inline-block">Entrar</a>
+                            </div>
+                            
+                            <div class="text-black font14 mb-2 d-sm-none">Já possui cadastro? Clique aqui para <a href="#">entrar</a></div>
+        
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label for="campoNome" class="form-label">Primeiro Nome</label>
+                                        <input id="campoNome" type="text" name="campoNome" placeholder="Digite seu primeiro nome" class="form-control nome validar">
+                                    </div>
+                                </div>
+        
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="campoSobrenome">Sobrenome</label>
+                                        <input id="campoSobrenome" type="text" name="campoSobrenome" placeholder="Digite seu sobrenome" class="form-control sobrenome validar">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="email">E-mail</label>
+                                        <input id="campoEmail" type="text" name="email" placeholder="Digite seu e-mail" class="form-control email validar">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="campoTelefone">Celular</label>
+                                        <input id="campoTelefone" type="text" name="campoTelefone" placeholder="(xx) xxxx-xxxx" class="form-control telefone validar">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="campoCPF">CPF</label>
+                                        <input id="campoCPF" type="text" name="campoCPF" placeholder="Digite seu CPF" class="form-control cpf validar">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="campoSenha">Senha</label>
+                                        <input id="campoSenha" type="password" name="password" placeholder="Digite sua senha" class="form-control senha validar">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="campoRepetirSenha">Confirme sua Senha</label>
+                                        <input id="campoRepetirSenha" type="password" name="campoRepetirSenha" placeholder="Digite sua senha novamente" class="form-control repetir-senha validar">
+                                    </div>
+                                </div>
+
+                                <!-- Novo campo para pergunta se é aluno da FIPP -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label">Você é aluno da FIPP?</label>
+                                        <div class="radio-group">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="yes" name="fippStudent" value="yes" checked>
+                                                <label class="form-check-label" for="yes">
+                                                    Sim
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="no" name="fippStudent" value="no">
+                                                <label class="form-check-label" for="no">
+                                                    Não
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- Campos adicionais se a resposta for sim -->
+                                <div id="fippDetails">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="form-group mb-3">
+                                                <label class="form-label" for="ra">RA</label>
+                                                <input id="ra" type="text" name="ra" class="form-control" placeholder="Digite seu RA">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6">
+                                            <div class="form-group mb-3">
+                                                <label class="form-label" for="course">Escolha seu curso</label>
+                                                <select id="course" name="course" class="form-select">
+                                                    <option value="si">Sistemas de Informação</option>
+                                                    <option value="cc">Ciência da Computação</option>
+                                                    <option value="es">Engenharia de Software</option>
+                                                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                                                    <option value="gti">Gestão da TI</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- Campos adicionais se a resposta for não -->
+                                <div id="fippDetailsNo" style="display: none;">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="participantType">Selecione seu tipo</label>
+                                        <select id="participantType" name="participantType" class="form-select">
+                                            <option value="etecStudent">Aluno ETEC</option>
+                                            <option value="unoesteEmployee">Professor/Funcionário Unoeste</option>
+                                            <option value="otherParticipants">Demais Participantes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-sm btn-primary">CADASTRAR</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./js/main.js" type="module"></script>
+</body>
+
+</html>
